@@ -1,0 +1,29 @@
+# The minimum number of reviews from each association that approve the pull request before
+# doing an automatic merge.
+minApprovals:
+  CONTRIBUTOR: 1
+
+# The status of the auto-merge process will be shown in each PR as a check.
+# This is useful to find out why a PR is not being merged automatically.
+reportStatus: true
+
+# Whether an out-of-date pull request is automatically updated.
+# It does so by merging its base on top of the head of the pull request.
+# This is useful for repositories where protected branches are used and the option
+# 'Require branches to be up to date before merging' is enabled.
+updateBranch: true
+
+# Whether the pull request branch is automatically deleted.
+deleteBranchAfterMerge: true
+
+# In what way a pull request needs to be merged.
+mergeMethod: squash
+
+# Whenever required labels are configured, pull requests will only be automatically merged whenever
+# all of these labels are attached to a pull request.
+requiredLabels:
+  - qa-approve
+  
+# Automatic merges will be blocked when any other developer has requested changes.
+
+
